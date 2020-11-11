@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Countries</title>
+    </head>
+    <body>
+    <form action="#" method="post" id="demoForm" class="demoForm">
+
+        <fieldset>
+            <legend> Liste des pays d'Europe</legend>
+            <p>
+                <select id="scripts" name="scripts">
+                    <option th:each="country: ${liste}" th:text="${country}"></option>
+                </select>
+
+
+                <input type="button" id="showLimitrophes" value="OK"/>
+            </p>
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="/js/app.js"></script>
+    </body>
+</html>
