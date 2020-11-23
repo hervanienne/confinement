@@ -26,11 +26,11 @@
         xmlhttp.open("GET",baseUrl+opt.value);
         xmlhttp.send();
 
+
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4) {
                 if (xmlhttp.status == 200) {
                     var result = JSON.parse(xmlhttp.response);
-
                     var fieldset = document.createElement("fieldset");
                                 fieldset.setAttribute("id","limitrophes");
                                 document.body.appendChild(fieldset);
